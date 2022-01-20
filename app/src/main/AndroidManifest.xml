@@ -9,25 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JDTalk_Clone">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/selector_bottom_navi_friends_icon" />
 
-        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/NoActionBar"/>
 
         <activity
             android:name=".SplashScreen_Activity"
-            android:theme="@style/Splash"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
-
-
-
-
-
